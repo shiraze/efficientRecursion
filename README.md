@@ -1,13 +1,9 @@
-# README
+Provides the $n^{th}$ item that satisfies the following rules:
 
-Provides the n<sup>th</sup> item that satisfies the following rules:
+$$f(1) = 1$$
+$$f(n + 1) = 1 + f(n + 1 - f(f(n)))$$
 
-```
-f(1) = 1
-f(n + 1) = 1 + f(n + 1 - f(f(n)))
-```
-
-Note that a global sequence value is extended, and is not cleared between tests.
+Note that the solution uses a global sequence array that is extended in each test and is not cleared between tests.
 
 ### How to run tests
 
